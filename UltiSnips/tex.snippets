@@ -29,6 +29,10 @@ snippet cs220hw "CS220 homework base template"
 \end{document}
 endsnippet
 
+snippet bf "Bold face"
+\textbf{$1}$2
+endsnippet
+
 snippet beg "begin{} / end{}" bA
 \begin{$1}
 	$0
@@ -47,7 +51,12 @@ snippet text "Non-italic text in math equations" iA
 endsnippet
 
 context "math()"
-snippet and "Logical And"
+snippet set "Set" iA
+\\{$1\\}$0
+endsnippet
+
+context "math()"
+snippet and "Logical And" i
 \land 
 endsnippet
 
